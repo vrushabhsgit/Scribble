@@ -10,10 +10,14 @@
     "dev": "tsx src/index.ts"
   },
   "dependencies": {
-    "@repo/typescript-config": "workspace:*"
+    "@repo/typescript-config": "workspace:*",
+    "ws": "^8.20.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/ws": "^8.18.1"
+  }
 }
