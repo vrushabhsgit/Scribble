@@ -5,6 +5,7 @@ Scribble is a real-time collaborative visual workspace designed for free-form th
 It enables multiple users to draw, write, and collaborate simultaneously on an infinite canvas with low latency and a smooth, natural drawing experience.
 
 🚀 **Live Visual Streaming (Highlighted Feature)**
+
 Scribble introduces a powerful **live streaming mode** where multiple participants can join a shared room and present their _visual thinking in real-time — directly on the canvas, without relying on screen sharing_.
 
 - Multiple users can join a live session
@@ -14,8 +15,6 @@ Scribble introduces a powerful **live streaming mode** where multiple participan
 - Viewers can watch ideas unfold live, making learning and collaboration more interactive
 
 This transforms Scribble from just a collaborative whiteboard into a **live visual communication platform**.
-
----
 
 ## Problem Statement
 
@@ -33,8 +32,6 @@ Scribble aims to provide:
 - Seamless real-time collaboration
 - A simple, distraction-free interface for visual thinking
 - **Live visual streaming without screen sharing for a cleaner, more focused experience**
-
----
 
 ## Core Features
 
@@ -82,8 +79,6 @@ Scribble aims to provide:
 - REST APIs for session and metadata handling
 - Clean separation between frontend and backend
 
----
-
 ## Tech Stack
 
 ### Frontend
@@ -115,8 +110,6 @@ Scribble aims to provide:
 - WebSockets for real-time updates
 - HTTP APIs for session and data management
 
----
-
 ## Project Structure (High Level)
 
 ```
@@ -147,8 +140,6 @@ packages/
 - Room metadata
 - Canvas state snapshots
 - Session associations
-
----
 
 ## Quick Start
 
