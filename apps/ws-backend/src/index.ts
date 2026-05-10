@@ -1,21 +1,14 @@
 import { WebSocketServer } from "ws";
+const wss = new WebSocketServer({ port: 8080 });
 
-const PORT = 8080;
-const wss = new WebSocketServer({ port: PORT });
-wss.on("connection", (socket) => {
-  console.log("Client connected");
-
-  socket.send("Hello from WebSocket server");
-
-  socket.on("message", (message) => {
-    console.log("Recived :", message.toString());
-
-    //echo back
-    socket.send(`Server received: ${message}`);
-  });
-
-  socket.on("close", () => {
-    console.log("Client disconnected");
+wss.on("connection", function connection(ws, request) {
+  const url = request.url;
+  if (!url) {
+    return;
+  }
+  const queryParams = new URLSearchParams(url.split("?")[1]);
+  const token = queryParams.get("token");
+  ws.on("message", function message(data) {
+    ws.send("pong");
   });
 });
-console.log(`WebSocket server running on ws://localhost:${PORT}`);
